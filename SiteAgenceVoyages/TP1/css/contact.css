@@ -1,0 +1,192 @@
+
+form {
+  max-width: 500px;
+  margin: 0 auto 3%;
+  font-family: Arial, sans-serif;
+  font-family: "SourceSansPro-Regular", sans-serif;
+  color: black;
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+
+form input, form select, form textarea {
+  font-family: "SourceSansPro-Regular", sans-serif;
+  border: none;
+  outline: none;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-align: left;
+}
+
+label [for="nom"],
+label [for="prenom"],
+label [for="mail"],
+label [for="sujet"],
+label [for="message"] {
+  padding-left: 0px;
+}
+
+label[for="qcm1"] {
+  margin-top: 10px;
+}
+
+label[for="qcm3"] {
+  margin-bottom: 20px;
+}
+
+label[for="qcm1"],
+label[for="qcm2"],
+label[for="qcm3"] {
+  cursor: pointer; 
+}
+
+input[type="date"] {
+  cursor: pointer;
+}
+
+select{
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+input[type="date"] {
+  width: 100%;
+  display : inline;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  padding-left: 0px;
+}
+
+input[type="text"],
+input[type="mail"] {
+  width: 100%;
+  padding-top: 10px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+input[type="radio"] {
+  margin-right: 10px;
+  padding-top: 10px;
+}
+
+
+.dateContact,
+.nom_div,
+.prenom,
+.mail,
+.genre_titre,
+.dateNaissance,
+.fonction_titre,
+.sujet_div, 
+.message_div {
+  margin-top: 3vh;
+}
+
+.dateContact,
+.nom_div,
+.prenom,
+.mail,
+.genre_div,
+.dateNaissance,
+.fonction_div,
+.sujet_div,
+.message_div {
+  position: relative;
+  width : 80%;
+  margin-left: 10%;
+}
+
+input {
+  margin-bottom: 0;
+}
+
+textarea {
+  resize: none;
+  margin-top: 10px;
+  width: 100%;
+
+}
+
+button {
+  margin-top: 30px;
+  margin-bottom: 25px;
+  width: 60%;
+  height: 50px;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  background-image: linear-gradient(to right, #a1ccae, #769c9e, #18383a);
+  background-size: 200% auto;
+  transition: background-position-x 0.5s ease;
+}
+
+button:hover {
+  background-position-x: 100%;
+}
+
+.button_text {
+  transition: transform 0.2s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.button_text:hover {
+  transform: scale(1.2);
+}
+
+.input-indicator hr,
+.separator hr {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0;
+  height: 3px;
+  border: none;
+  background-color: gray;
+}
+
+.input-indicator hr::before {
+  position: absolute;
+  background-image: linear-gradient(to right, #a1ccae, #769c9e, #18383a);
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  content: "";
+  transition: width 0.4s ease;
+}
+
+input:focus + .input-indicator hr::before {
+  width: 100%;
+}
+
+textarea:focus + .input-indicator hr::before {
+  width: 100%;
+}
+
+input[type="text"]:placeholder-shown:focus,
+input[type="mail"]:placeholder-shown:focus,
+textarea:placeholder-shown:focus  {
+  color: transparent;
+  caret-color: #18383a;
+}
+
+
+
